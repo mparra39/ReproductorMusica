@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             try reproductor = AVAudioPlayer(contentsOf: sonidoURL!)
             tituloCancion.text = "Back in black"
             imagenCancion.image = UIImage(named: "acdc-back-in-black.jpg")
-            reproductor.volume = 0.5
+            reproductor.volume = 1.0
             volumen.text = String(reproductor.volume)
         }catch{
             print("Error al cargar el archivo")
