@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reproductor_de_Mu_sica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acdc-back-in-black.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PMY-h3-FO8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5tf-Tr-UO6"/>
+                                    <constraint firstAttribute="width" constant="150" id="DNS-gA-RnY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5i-hD-WbS">
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Sg-Xe-FwK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-Sx-X1l">
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pause" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTd-pv-5EP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-R6-dWW">
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lpt-K6-dmc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6U-9G-UOp">
+                                <frame key="frameInset" minX="16" minY="28" width="30" height="30"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="volumeSubir" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8h-jP-5xb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-6K-8aZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="12N-t7-EiF"/>
+                                </constraints>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="volumeBajar" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epc-jQ-82p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2z-Ey-kRH">
+                                <state key="normal" title="Aleatorio"/>
+                                <connections>
+                                    <action selector="aleatorio" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKk-nw-Te5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRl-7u-RJl">
+                                <state key="normal" title="Back In Black"/>
+                                <connections>
+                                    <action selector="cancion1" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPv-vd-yuh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsp-nb-c69">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Bhl-Do-C5P"/>
+                                </constraints>
+                                <state key="normal" title="Highway To Hell"/>
+                                <connections>
+                                    <action selector="cancion2" destination="BYZ-38-t0r" eventType="touchUpInside" id="bON-Ym-9fb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-jb-XJD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="p1n-VY-nUv"/>
+                                </constraints>
+                                <state key="normal" title="Piano Man"/>
+                                <connections>
+                                    <action selector="cancion3" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oys-9x-8hC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEa-Gm-514">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="RQN-Xt-jhe"/>
+                                </constraints>
+                                <state key="normal" title="Smooth Criminal"/>
+                                <connections>
+                                    <action selector="cancion4" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIt-JM-Dz7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dG-Fu-MG2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="S5c-y7-29X"/>
+                                </constraints>
+                                <state key="normal" title="Superstition"/>
+                                <connections>
+                                    <action selector="cancion5" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpz-yM-efO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título de canción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9f-Sy-Pfc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6Hs-yQ-7jD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMI-Q1-4Sa">
+                                <frame key="frameInset" minX="16" minY="97" width="40" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2su-8C-kcv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="73a-6K-8aZ" firstAttribute="bottom" secondItem="PMY-h3-FO8" secondAttribute="bottom" id="109-Ro-Thb"/>
+                            <constraint firstItem="2dG-Fu-MG2" firstAttribute="top" secondItem="OEa-Gm-514" secondAttribute="bottom" constant="8" symbolic="YES" id="3Bt-XJ-mk0"/>
+                            <constraint firstItem="R1e-R6-dWW" firstAttribute="leading" secondItem="XQk-Sx-X1l" secondAttribute="trailing" constant="36" id="7im-IR-Rgo"/>
+                            <constraint firstItem="IRl-7u-RJl" firstAttribute="leading" secondItem="nsp-nb-c69" secondAttribute="leading" id="8ck-GL-YfD"/>
+                            <constraint firstItem="b2z-Ey-kRH" firstAttribute="leading" secondItem="PMY-h3-FO8" secondAttribute="trailing" constant="-105" id="Bx0-hm-vd7"/>
+                            <constraint firstItem="Y9f-Sy-Pfc" firstAttribute="top" secondItem="PMY-h3-FO8" secondAttribute="bottom" constant="9" id="DN6-ZW-2Ef"/>
+                            <constraint firstItem="Y9f-Sy-Pfc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="GLX-Qf-SXc"/>
+                            <constraint firstItem="nsp-nb-c69" firstAttribute="leading" secondItem="hr6-jb-XJD" secondAttribute="leading" id="McA-Vo-TNc"/>
+                            <constraint firstItem="IRl-7u-RJl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="OSX-u0-bwn"/>
+                            <constraint firstItem="XQk-Sx-X1l" firstAttribute="baseline" secondItem="R1e-R6-dWW" secondAttribute="baseline" id="Oec-pk-Ww9"/>
+                            <constraint firstItem="PMY-h3-FO8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QUR-CJ-lI3"/>
+                            <constraint firstItem="OEa-Gm-514" firstAttribute="top" secondItem="hr6-jb-XJD" secondAttribute="bottom" constant="8" symbolic="YES" id="RRC-YP-w4z"/>
+                            <constraint firstItem="nsp-nb-c69" firstAttribute="top" secondItem="IRl-7u-RJl" secondAttribute="bottom" constant="8" symbolic="YES" id="TAL-rS-x7e"/>
+                            <constraint firstItem="hr6-jb-XJD" firstAttribute="leading" secondItem="OEa-Gm-514" secondAttribute="leading" id="TVh-vD-Gfy"/>
+                            <constraint firstItem="HMI-Q1-4Sa" firstAttribute="top" secondItem="O6U-9G-UOp" secondAttribute="bottom" constant="39" id="UHf-i2-Ib6"/>
+                            <constraint firstItem="b2z-Ey-kRH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="475" id="Vy0-NV-geN"/>
+                            <constraint firstItem="PMY-h3-FO8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W1Y-Mn-gcg"/>
+                            <constraint firstItem="73a-6K-8aZ" firstAttribute="top" secondItem="HMI-Q1-4Sa" secondAttribute="bottom" constant="39" id="WmM-oG-j2k"/>
+                            <constraint firstItem="C5i-hD-WbS" firstAttribute="top" secondItem="Y9f-Sy-Pfc" secondAttribute="bottom" constant="8" symbolic="YES" id="YOr-NR-oFn"/>
+                            <constraint firstItem="hr6-jb-XJD" firstAttribute="top" secondItem="nsp-nb-c69" secondAttribute="bottom" constant="8" symbolic="YES" id="b3R-WI-yp5"/>
+                            <constraint firstItem="IRl-7u-RJl" firstAttribute="top" secondItem="C5i-hD-WbS" secondAttribute="bottom" constant="31" id="bRf-fy-pSA"/>
+                            <constraint firstItem="PMY-h3-FO8" firstAttribute="centerX" secondItem="Y9f-Sy-Pfc" secondAttribute="centerX" id="dSp-Nh-OHJ"/>
+                            <constraint firstItem="PMY-h3-FO8" firstAttribute="centerY" secondItem="b2z-Ey-kRH" secondAttribute="centerY" constant="-407" id="jwt-dO-PXJ"/>
+                            <constraint firstItem="O6U-9G-UOp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="lJ6-yb-izA"/>
+                            <constraint firstItem="C5i-hD-WbS" firstAttribute="baseline" secondItem="XQk-Sx-X1l" secondAttribute="baseline" id="lTY-tf-Kev"/>
+                            <constraint firstItem="73a-6K-8aZ" firstAttribute="leading" secondItem="HMI-Q1-4Sa" secondAttribute="leading" id="oSG-T2-kMI"/>
+                            <constraint firstItem="Y9f-Sy-Pfc" firstAttribute="centerX" secondItem="XQk-Sx-X1l" secondAttribute="centerX" id="ops-3U-LeW"/>
+                            <constraint firstItem="HMI-Q1-4Sa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pVE-0M-c5m"/>
+                            <constraint firstItem="OEa-Gm-514" firstAttribute="leading" secondItem="2dG-Fu-MG2" secondAttribute="leading" id="qcO-um-PD5"/>
+                            <constraint firstItem="O6U-9G-UOp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xci-3t-CI4"/>
+                            <constraint firstItem="XQk-Sx-X1l" firstAttribute="leading" secondItem="C5i-hD-WbS" secondAttribute="trailing" constant="39" id="zhw-zb-R0A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagenCancion" destination="PMY-h3-FO8" id="Tga-Ir-Pza"/>
+                        <outlet property="tituloCancion" destination="Y9f-Sy-Pfc" id="rG6-fN-GDn"/>
+                        <outlet property="volumen" destination="HMI-Q1-4Sa" id="LMn-1z-qoY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="acdc-back-in-black.jpg" width="406" height="406"/>
+    </resources>
+</document>
